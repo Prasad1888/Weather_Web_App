@@ -1,0 +1,129 @@
+* {
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url('images/bgimg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Inter", sans-serif;
+    color: #f9e3c6;
+}
+
+.mainContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 50%;
+    height: 80vh;
+    padding: 2rem 2rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.3px);
+}
+
+.searchBar {
+    /* background: coral; */
+    width: 42%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.search {
+    padding: 0.4rem 1rem;
+    width: 13rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    /* background: aquamarine; */
+}
+
+.search::placeholder {
+    color: black;
+}
+
+.searchBtn {
+    border-radius: 50%;
+    padding: 0.1rem 0.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+}
+
+.imgIcon {
+    width: 13rem;
+}
+
+.weatherInfo {
+    /* background: cornsilk; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.humidWindImg1 {
+    width: 7rem;
+    /* display:none; */
+}
+
+.humidWindImg2 {
+    width: 7rem;
+    /* display:none; */
+}
+
+.weatherInfo>p {
+    display: flex;
+    font-size: xx-large;
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
+    text-align: center;
+}
+
+@media screen and (max-width : 425px) {
+    body {
+        background-image: url('images/mobilebg.jpg');
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .mainContainer {
+        width: 23rem;
+        height: 100vh;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(1.3px);
+        justify-content: center;
+    }
+
+    .humidWindImg1 {
+        width: 5rem;
+    }
+
+    .humidWindImg2 {
+        width: 5rem;
+    }
+
+    .weatherInfo {
+        width: 122%;
+    }
+
+    .weatherInfo>p {
+        font-size: large;
+    }
+
+}
